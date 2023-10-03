@@ -1,0 +1,10 @@
+.display-pic::before {
+    content: "This is a caption";
+    display: block;
+    text-align: center;
+    /* margin-bottom: 10px; */
+  }
+
+img {
+    border: 10px dotted black;
+}

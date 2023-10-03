@@ -1,0 +1,304 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+/* Utilities */
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+a:link {
+    color: inherit;
+}
+
+a:visited {
+    color: #437a16;
+}
+
+a:hover {
+    background-color: khaki;
+    color: black;
+}
+
+a:active {
+    color: hotpink;
+}
+
+p,
+ol,
+ul {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style-position: inside;
+}
+
+body {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    background-color: #bbbfc2;
+    color: black;
+}
+
+/* Header */
+
+.top-nav-bar {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    height: 3vh;
+    background-color: black;
+}
+
+.top-nav-bar li {
+    width: 20vw;
+    text-align: center;
+}
+
+.top-nav-bar a {
+    text-decoration: none;
+    color: floralwhite;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+}
+
+.top-nav-bar a:hover {
+    background-color: ghostwhite;
+    color: rgb(31, 118, 233);
+}
+
+/* Main */
+
+#pic-name-title {
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#0984e3, #16a085);
+    color: floralwhite;
+    box-shadow: 0 5px 8px 0 #2d3436;
+}
+
+#pic-name-title #my-name {
+    margin-top: 2rem;
+    font-variant: small-caps;
+}
+
+#pic-name-title #tagline {
+    margin-top: 0;
+    font-style: italic;
+    color: moccasin;
+}
+
+/* .display-pic {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 5px solid whitesmoke;
+    box-shadow: 0px 0px 3px 5px #2d3436;
+} */
+
+@media screen and (min-width: 300px) {
+    .display-pic {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 5px solid whitesmoke;
+        box-shadow: 0px 0px 3px 5px #2d3436;
+    }
+}
+
+main {
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+main section {
+    border-radius: 10px 100px / 120px;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+main section h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+main section:nth-child(odd) {
+    background-color: rgb(208, 255, 239);
+}
+
+main section:nth-child(even) {
+    background-color: mintcream;
+    ;
+}
+
+main .progress-bar {
+    background-color: whitesmoke;
+}
+
+main .progress-html {
+    background-color: aquamarine;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 60%;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+main .progress-css {
+    background-color: fuchsia;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 70%;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+main .progress-javascript {
+    background-color: sandybrown;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 35%;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+main .education-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-top: 3px dashed #16a085;
+    padding: 1rem;
+}
+
+main .education-item:nth-of-type(even) {
+    border-right: 3px dashed #16a085;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-left: 1rem;
+    padding-left: 0;
+}
+
+main .education-item:nth-of-type(odd) {
+    border-left: 3px dashed #16a085;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    margin-right: 1rem;
+    padding-right: 0;
+}
+
+main .education-item:first-of-type {
+    border-top: 0;
+    border-top-left-radius: 0;
+}
+
+main .education-item:last-of-type {
+    border-bottom-left-radius: 0;
+}
+
+main .institution h3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+main .institution span {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Footer */
+
+#footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d3436;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    color: floralwhite;
+    box-shadow: 0px -2px 2px 1px #2ecc71;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:nth-of-type(n+2) {
+    margin-left: 1.5rem;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.soc-med-icons {
+    display: flex;
+    justify-content: center;
+}
